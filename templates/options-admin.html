@@ -1,0 +1,69 @@
+<style>
+	.onoffswitch-inner:before {
+		content: "{{{option_yes}}}";
+	}
+	.onoffswitch-inner:after {
+		content: "{{{option_no}}}";
+	}
+</style>
+<div class="wrap">
+	<h1>{{{page_title}}}</h1>
+	<form method="post" id="democracy_options_admin_form">
+		<input type='hidden' name='action' value='{{{ajax_id}}}' />
+		<input type='hidden' name='submit_mode' value='{{{submit_mode}}}' />
+		
+		<h2>{{{section1}}}</h2>
+		<table class="form-table">
+			<tr valign="top">
+				<th scope="row">{{{section1_admin_exclude_label}}}:</th>
+				<td>{{{section1_admin_exclude_option}}}</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row">{{{section1_publish_label}}}:</th>
+				<td>{{{section1_publish_option}}}</td>
+				<td>{{{section1_publish_hint}}}</td>
+			</tr>
+		</table>
+		<hr>
+		
+		<h2>{{{section2}}}</h2>
+		<table class="form-table">
+			<tr valign="top">
+				<th scope="row">{{{section2_role_label}}}:</th>
+				<td>{{{section2_role_option}}}</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row">{{{section2_notify_label}}}:</th>
+				<td>{{{section2_notify_option}}}</td>
+			</tr>
+		</table>
+		<hr>
+		
+		<h2>{{{section3}}}</h2>
+		<table class="form-table">
+			{{{section3_election}}}
+		</table>
+		<hr>
+		
+		<h2>{{{section4}}}</h2>
+		<table class="form-table">
+			<tr>
+				<th scope='row'>{{{section4_role_application_duration_label}}}</th>
+				<td>{{{section4_role_application_duration_option}}}</td>
+			</tr>
+			{{{section4_election}}}
+			{{{section4_roles}}}
+		</table>
+		<hr>
+		
+		<h2>{{{section5}}}</h2>
+		<table class="form-table">
+			{{{section5_election}}}
+		</table>
+		<hr>
+		
+		{{{submit_button}}}
+		<div id="ajax_feedback"></div>
+		{{{err}}}
+	</form>
+</div>

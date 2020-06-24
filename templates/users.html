@@ -1,0 +1,23 @@
+<div class="wrap">
+	<h1>{{{page_title}}}</h1>
+	
+	<input type='text' name='search' id='{{{ajax_id_search}}}' placeholder='{{{filter}}}' />
+	
+	<h2>{{{list_title}}}</h2>
+	
+	<form action="{{{post_action}}}" method="post" id="democracy_exclude_users_form">
+		<input type="hidden" name="action" value="{{{post_id}}}" />
+		<span id="democracy_exclude_users_text_reason" class='hidden'>{{{text_reason}}}</span>
+		<span id="democracy_exclude_users_text_exclude" class='hidden'>{{{text_exclude}}}</span>
+		<span id="democracy_exclude_users_text_include" class='hidden'>{{{text_include}}}</span>
+		<span id="democracy_users_text_without_role" class='hidden'>{{{text_without_role}}}</span>
+		<p>
+			<input type='checkbox' id='democracy_exclude_choose_all' /><b>{{{choose_all}}}</b>
+		</p>
+		
+		<div id='democracy_users_list'></div>
+			
+		<p>{{{submit}}}</p>
+	</form>
+	<div id="ajax_feedback"></div>
+</div>

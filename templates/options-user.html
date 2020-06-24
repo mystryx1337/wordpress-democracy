@@ -1,0 +1,21 @@
+<div class="wrap">
+	<h1>{{{page_title}}}</h1>
+	<form method="post" id="democracy_options_user_form">
+		<input type='hidden' name='action' value='{{{ajax_id}}}' />
+		
+		<h2>{{{section1}}}</h2>
+		<table class="form-table">
+			<tr valign="top">
+				<th scope="row">{{{section1_trusted_user_label}}}:</th>
+				<td>{{{section1_trusted_user_option}}}</td>
+			</tr>
+			<tr valign="top">
+				<th scope="row">{{{section1_notify_label}}}:</th>
+				<td>{{{section1_notify_option}}}</td>
+			</tr>
+		</table>
+		
+		{{{submit_button}}}
+	</form>
+	<div id="ajax_feedback"></div>
+</div>

@@ -1,0 +1,13 @@
+<h3>{{{text_title}}}</h3>
+<p class='margin-l20'>{{{application_end}}}</p>
+<p class='margin-l20'>{{{application_count}}}</p>
+<form method="post" class="democracy_application_form">
+	<input type='hidden' id='democracy_text_applicate' value='{{{text_applicate}}}' />
+	<input type='hidden' id='democracy_text_cancel_app' value='{{{text_cancel_app}}}' />
+	
+	<input type='hidden' name='action' value='{{{ajax_id}}}' />
+	<input type='hidden' name='application_id' id='democracy_application_id' value='{{{application_id}}}' />
+	
+	{{{submit_button}}}
+</form>
+<hr>

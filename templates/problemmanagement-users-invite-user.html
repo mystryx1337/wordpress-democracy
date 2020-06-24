@@ -1,0 +1,44 @@
+<div class="wrap">
+	<h1>{{{page_title}}}</h1>
+	<form method="post" id="democracy_invite_user_form">
+		<input type="hidden" name="action" value="{{{ajax_id}}}" />
+		<table>
+			<tr>
+				<td>{{{label_username}}}*</td>
+				<td><input type="text" name="username" value="{{{username}}}" {{{readonly}}} placeholder="{{{placeholder_username}}}" required /></td>
+			</tr>
+			<tr>
+				<td>{{{label_email}}}*</td>
+				<td><input type="email" name="email" value="{{{email}}}" {{{readonly}}} required /></td>
+			</tr>
+			<tr>
+				<td>{{{label_meta_first_name}}}</td>
+				<td><input type="text" name="meta_first_name" value="{{{meta_first_name}}}" {{{readonly}}} /></td>
+			</tr>
+			<tr>
+				<td>{{{label_meta_last_name}}}</td>
+				<td><input type="text" name="meta_last_name" value="{{{meta_last_name}}}" {{{readonly}}} /></td>
+			</tr>
+			<tr>
+				<td>{{{label_meta_comment}}}</td>
+				<td><input type="text" name="meta_comment" value="{{{meta_comment}}}" {{{readonly}}} /></td>
+			</tr>
+			<tr>
+				<td>{{{label_role}}}</td>
+				<td>{{{role}}}</td>
+			</tr>
+			<tr>
+				<td>
+					<textarea
+						id="democracy_reject_user_form_textarea"
+						name="democracy_reject_user_form_textarea"
+						rows="5"
+						placeholder="{{{reason_placeh}}}"></textarea>
+					{{{reject}}}
+				</td>
+				<td>{{{submit}}}</td>
+			</tr>
+		</table>
+	</form>
+	<div id="ajax_feedback"></div>
+</div>

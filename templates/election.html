@@ -1,0 +1,36 @@
+<hr />
+
+<div class="wrap">
+	<h1>{{{page_title}}}</h1>
+	
+	<form action="{{{post_action}}}" method="post">
+		<input type="hidden" name="action" value="{{{post_id}}}" />
+		<input type="hidden" name="event_id" value="{{{event_id}}}" />
+		
+		<p>{{{description}}}</p>
+		
+		<hr />
+		
+		<h2>{{{text_settings}}}</h2>
+		<table>
+			<tr><td>{{{text_end_date}}}</td><td>{{{end_date}}}</td></tr>
+			<tr><td>{{{text_duration}}}</td><td>{{{duration}}}</td></tr>
+			<tr><td>{{{text_ratio}}}</td><td>{{{ratio}}}</td></tr>
+			<tr><td>{{{text_changeable}}}</td><td>{{{changeable}}}</td></tr>
+		</table>
+		
+		<h2>{{{result_title}}}</h2>
+		<p>{{{result}}}</p>
+
+		<hr />
+		
+		<h2>{{{text_own_choice}}}</h2>
+		<div>
+			<p></p>
+			<p>{{{options}}}</p>
+			<p>{{{submit}}}</p>
+		</div>
+		
+		<p>{{{text_hint_trusted_user}}}</p>
+	</form>
+</div>
