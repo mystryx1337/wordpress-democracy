@@ -1,6 +1,4 @@
-# Bachelor's thesis hacker
-
-## Hackers' Democracy, 0.9
+# Hackers' Democracy, 0.9
 
 Copyright 2019 Alexander Hacker
 
@@ -26,6 +24,8 @@ The software generated here is a plugin for Wordpress. It supports the following
 
 offers functions for the democratic assignment of roles via proxy voting, content controls by higher roles, the possibility to invite and exclude users by all users after revision by higher roles, as well as exclusion of an administrator from content editing.
 
+see more in the demo video: https://youtu.be/aUoLF-jrC50
+
 ## Installation
 
 Follow the installation instructions from the Integreat Github repository
@@ -34,6 +34,14 @@ the user interface at https://github.com/Integreat/integreat-webapp.
 
 After the successful setup of Integreat, the plugin can simply be installed as
 zip file can be added in the backend under Plugins -> Install.
+
+## possible ToDos
+
+- Make plugin independent from Integreat (It's a good software, but the plugin should not be limited to that)
+- Make some essential translations
+- developing n-eyes principle instead of four-eyes principle
+- implement damping factor to proxy voting
+- open to more
 
 ## Dependencies
 The plugin was developed in the context of a Wordpress based instance of the software
