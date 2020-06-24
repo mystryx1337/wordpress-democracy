@@ -1,4 +1,4 @@
-# Hackers' Democracy, 0.9
+# Wordpress Democracy, 0.9
 
 Copyright 2019 Alexander Hacker
 
